@@ -2,15 +2,15 @@ server:
   port: 8080
   servlet:
     context-path: /
-  address: 192.168.1.107
-#  address: 10.235.159.114
+#  address: localhost
+  address: 192.168.8.108
 #  address: 192.168.43.77
 #  address: 10.235.146.77
 #  address: 10.0.0.211
 spring:
   datasource:
     username: root
-    password: 888888
+    password: wcf129
     url: jdbc:mysql://localhost:3306/joining?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
 
@@ -22,9 +22,15 @@ spring:
       classpath: /templates   # 访问template下的html文件需要配置模板，映射
     cache: false # 开发时关闭缓存,不然没法看到实时页面
 
+  mail:
+    host: smtp.qq.com
+    username: 1298891887@qq.com
+    #password: nagyoedjvtolidjd
+    default-encoding: UTF-8
+
 
 IMConfig:
-  sdkAppId: 1400494088
-  secretKey: "b7ea71efab9d1ec895e34a944ab7437bf3de1902179f618e831b0087dceeb137"
-#  sdkAppId: 1400487145
-#  secretKey: "619de1cd9f8c6296fec0fb40c80677d676f6013dc0ba8f0c2e1c98bd1a445d51"
+#  sdkAppId: 1400494088
+#  secretKey: "b7ea71efab9d1ec895e34a944ab7437bf3de1902179f618e831b0087dceeb137"
+  sdkAppId: 1400487145
+  secretKey: "619de1cd9f8c6296fec0fb40c80677d676f6013dc0ba8f0c2e1c98bd1a445d51"

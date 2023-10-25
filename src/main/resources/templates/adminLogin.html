@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>后台管理</title>
+    <link rel="stylesheet" href="lib/layui/css/layui.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body class="login-bg">
+<div class="login layui-anim layui-anim-up"  >
+    <h1  style="font-size: 24px;color: #29c4b0;text-align: center">拼团系统后台管理</h1>
+    <hr class="hr15"><hr class="hr15">
+    <form method="post" action="/adminlogin" class="layui-form" >
+        <input type="text" name="id" placeholder="用户名" lay-verify="required" class="layui-input">
+        <hr class="hr15">
+        <input type="password"  name="password" placeholder="密码" lay-verify="required" class="layui-input">
+        <hr class="hr15"><hr class="hr15">
+        <input value="登录" lay-submit lay-filter="login" type="submit" >
+<!--        <input value="登录" lay-submit lay-filter="login" type="submit" onclick="formSubmit()">-->
+        <hr class="hr10" >
+    </form>
+    <span th:text="${msg}" style="color: white"></span>
+</div>
+</body>
+
+</html>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="lib/layui/layui.js"></script>
+<script src="js/login.js"></script>

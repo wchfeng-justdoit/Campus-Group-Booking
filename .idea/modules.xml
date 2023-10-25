@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/campus-group-booking.iml" filepath="$PROJECT_DIR$/campus-group-booking.iml" />
       <module fileurl="file://$PROJECT_DIR$/pindan.iml" filepath="$PROJECT_DIR$/pindan.iml" />
     </modules>
   </component>
